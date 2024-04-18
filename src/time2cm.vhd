@@ -35,12 +35,16 @@ entity time2cm is
     Port ( en : in STD_LOGIC;
            clk : in STD_LOGIC;
            rst : in STD_LOGIC;
+           pulse : in STD_LOGIC;
            count_s : out STD_LOGIC_VECTOR (7 downto 0));
 end time2cm;
 
 architecture Behavioral of time2cm is
 
     component clock_enable is
+        generic(
+            PERIOD:integer
+        );
         port( clk : in STD_LOGIC;
            rst : in STD_LOGIC;
            en : in std_logic;
@@ -50,19 +54,28 @@ architecture Behavioral of time2cm is
     
 signal sig_final : std_logic_vector (7 downto 0);
 signal sig_clk_ten : std_logic;
+signal sig_en : std_logic;
  
 begin
 
+    sig_en <= en and not sig_final(7);
+    
     jednotky: clock_enable
+    generic map(
+        PERIOD => 10
+    )
     port map (
       clk => clk,
-      en => en,
+      en => sig_en,
       rst => rst, 
       sig_c => sig_final (3 downto 0),
       pulse => sig_clk_ten
     );
     
     desitky: clock_enable
+    generic map(
+        PERIOD => 10
+    )
     port map (
       clk => clk,
       en => sig_clk_ten,

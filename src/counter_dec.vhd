@@ -58,8 +58,7 @@ begin
         sig_c <= sig_count;
         -- Synchronous proces;
         if (rising_edge(clk)) then
-            -- if high-active reset then
-            if (rst='1') then
+           if (rst='1') then
                 sig_count <= (others => '0');
                 -- Clear all bits of local counter
                 pulse <= '0';
