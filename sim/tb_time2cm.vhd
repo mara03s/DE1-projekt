@@ -22,7 +22,7 @@ architecture tb of tb_time2cm is
     signal rst     : std_logic;
     signal count_s : std_logic_vector (7 downto 0);
 
-    constant TbPeriod : time := 20 ns; -- EDIT Put right period here
+    constant TbPeriod : time := 10 ns; -- EDIT Put right period here
     signal TbClock : std_logic := '0';
     signal TbSimEnded : std_logic := '0';
 
@@ -48,9 +48,9 @@ begin
         -- Reset generation
         -- EDIT: Check that rst is really your reset signal
         rst <= '1';
-        wait for 100 ns;
+        wait for 10 ns;
         en <= '1';
-        wait for 100 ns;
+        wait for 10 ns;
         
         rst <= '0';
         
