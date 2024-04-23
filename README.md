@@ -37,7 +37,7 @@ Senzor HC-SR04 a naznačení jeho funkce
 - [MUX_display](./sim/tb_MUX_display.vhd) - text textový
 ![mux_display](https://github.com/mara03s/DE1-projekt/assets/164920387/e597b730-3e32-4a25-ae78-f3e41ddf67ec)
 
-- [clk_en](./sim/tb_MUX_display.vhd) - text textový
+- [clk_en](./sim/tb_top_clock.vhd) - text textový
 ![clk_en](https://github.com/mara03s/DE1-projekt/assets/164920387/fa4d7d30-fc3c-418d-8bc4-a36ff71317ce)
 
 - [multiplex_dec](./sim/tb_multiplex_dec.vhd) - text textový
