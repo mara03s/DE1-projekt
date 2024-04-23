@@ -21,12 +21,12 @@ Schématické zapojení pro desku Nexys A7-50T
 
 Deska Nexys A7-50T
 
-![nexys componenty](https://github.com/mara03s/DE1-projekt/assets/164920387/7ff6ad99-1e27-43ea-85eb-47c6f1b0045e)
+<img src="https://github.com/mara03s/DE1-projekt/assets/164920387/7ff6ad99-1e27-43ea-85eb-47c6f1b0045e" width="70%">
 
 Komponenty desky Nexys A7-50T
 
 ![senzor](https://github.com/mara03s/DE1-projekt/assets/164920387/be1a75f3-255d-4c5a-aa9f-889d8850ef73)
-![senzor funkce](https://github.com/mara03s/DE1-projekt/assets/164920387/0ccdab1f-673f-4b67-93d8-b6816c0eb4a3)
+<img src="https://github.com/mara03s/DE1-projekt/assets/164920387/0ccdab1f-673f-4b67-93d8-b6816c0eb4a3" width="50%">
 
 Senzor HC-SR04 a naznačení jeho funkce
 
