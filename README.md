@@ -1,7 +1,7 @@
 # DE1-projekt
-- Vendula Šmídová, Marek Šulc - vytváření a implementace časovací části, video 
+- Vendula Šmídová, Marek Šulc - vytváření a implementace časovací části, video, top level
 
-- Vojtěch Šolc, Ondřej Slonek - vytváření a sestavení majority využitých prvků, read me file
+- Vojtěch Šolc, Ondřej Slonek - vytváření a sestavení nových využitých prvků, read me file, top level
 
 ## Teoretický popis problému
 
@@ -30,12 +30,12 @@ Komponenty desky Nexys A7-50T
 
 Senzor HC-SR04 a naznačení jeho funkce
 
-## Software popis
+## Popis a simulace komponent
 
 
-## Simulace komponent
 
-##Instrukce 
+## Instrukce
+
 U naší implementace využíváme prvních 8 switchů pro dimenzaci rozsahu přičemž první čtveřici využíváme pro nastavení jednotek, a druhou čtveřici využíváme pro nastavení desítek centimetrů pro rozsvícení diody pomocí dekadické abecedy(dioda se rozsvěcí pokud se dostaneme pod požadovanou nastavenou úroveň), a další tři switche využíváme pro výběr senzoru. 
 
 <img src="https://github.com/mara03s/DE1-projekt/assets/164920387/42f4d87d-50ef-44af-a00d-6370fc46d6d3" width="30%">
