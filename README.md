@@ -31,6 +31,7 @@ Komponenty desky Nexys A7-50T
 Senzor HC-SR04 a naznačení jeho funkce
 
 ## Popis a simulace komponent
+[Link to tb_MUX_display.vhd](./sim/tb_MUX_display.vhd)
 
 
 
