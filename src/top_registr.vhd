@@ -26,10 +26,10 @@ component debounce is
 end component;
     
 component time2cm is
-    port ( en : in STD_LOGIC;
+    port ( en_m : in STD_LOGIC;
+           en_t : in std_logic;
            clk : in STD_LOGIC;
            rst : in STD_LOGIC;
-           pulse : in STD_LOGIC;
            count_s : out STD_LOGIC_VECTOR (7 downto 0));
 end component;
 
@@ -52,9 +52,9 @@ signal sig_count : std_logic_vector ( 7 downto 0);
 begin
     top_debounce : debounce
     port map (
-       clk => clk,
+       clk => CLK100MHZ,
        rst => rst,
-       en => '1',
+       en => clk,
        bouncey => echo,
        clean => open,
        pos_edge => open,
@@ -63,9 +63,9 @@ begin
     
     prevod : time2cm
     port map (
-       en => echo,
-       pulse => CLK100MHZ,
-       clk => clk,
+       en_m => echo,
+       en_t => clk,
+       clk => CLK100MHZ,
        rst => rst,
        count_s => sig_counter 
     );

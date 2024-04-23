@@ -45,7 +45,7 @@ entity top_level is
            CG : out STD_LOGIC;
            DP : out STD_LOGIC;
            SW : in STD_LOGIC_VECTOR (10 downto 0);
-           LED : out STD_LOGIC_VECTOR (9 downto 0));
+           LED : out STD_LOGIC_VECTOR (1 downto 0));
 end top_level;
 
 architecture Behavioral of top_level is
@@ -138,8 +138,6 @@ port map (
    CG => CG,
    DP => DP
 );
-
-LED (9 downto 2) <= sig_count_0;
 
 JB(1) <= sig_trig;
 JB(2) <= sig_trig;

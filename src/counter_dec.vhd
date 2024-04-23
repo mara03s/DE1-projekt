@@ -65,15 +65,15 @@ begin
                 -- Set output `pulse` to low
             elsif (en='0') then
                 pulse <= '0';
-            elsif (sig_count = PERIOD-2) then
+            --elsif (sig_count = PERIOD-2) then
             -- elsif sig_count is PERIOD-1 then
                 -- Clear all bits of local counter
                 -- Set output `pulse` to high
-                pulse <= '1';
-                sig_count <= sig_count + 1;
+             --   pulse <= '1';
+             --   sig_count <= sig_count + 1;
             elsif (sig_count = PERIOD-1) then
                 sig_count <= (others => '0');
-                pulse <= '0';
+                pulse <= '1';
             else
             -- else
                 -- Increment local counter

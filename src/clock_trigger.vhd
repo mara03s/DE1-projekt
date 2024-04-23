@@ -5,7 +5,7 @@ library ieee;
 
 entity clock_trigger is
     generic (
-        PERIOD : integer := 3 --! Default number of clk periodes to generate one pulse
+        PERIOD : integer := 20000000 --! Default number of clk periodes to generate one pulse
     );
     port (
         clk   : in    std_logic; --! Main clock

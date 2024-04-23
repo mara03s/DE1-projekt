@@ -80,7 +80,7 @@ begin
 
 top_clock_trigger : clock_trigger
 generic map (
-   PERIOD => 200000000
+   PERIOD => 40000000
 )
 port map (
    clk => CLK100MHZ ,
