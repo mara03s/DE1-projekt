@@ -35,6 +35,7 @@ Senzor HC-SR04 a naznačení jeho funkce
 
 
 
+
 ## Instrukce
 
 U naší implementace využíváme prvních 8 switchů pro dimenzaci rozsahu přičemž první čtveřici využíváme pro nastavení jednotek, a druhou čtveřici využíváme pro nastavení desítek centimetrů pro rozsvícení diody pomocí dekadické abecedy(dioda se rozsvěcí pokud se dostaneme pod požadovanou nastavenou úroveň), a další tři switche využíváme pro výběr senzoru. 
