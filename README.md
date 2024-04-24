@@ -35,16 +35,16 @@ Senzor HC-SR04 a naznačení jeho funkce
 
 Zapojení top_level
 
-- [Registr](./sim/tb_registr.vhd) - dostane signál, a poté začne ukládat prvky které jsou na jeho vstupu a zároveň vypouští prvky z paměti, a 
+- [Registr](./sim/tb_registr.vhd) - pole d-latchů, jeho primární funkcí je pustit výstup až po dokončení počítání délky pulsu
 ![registr](https://github.com/mara03s/DE1-projekt/assets/164920387/30bf3e46-36f9-4578-8a19-8fffee55fce3)
 
-- [MUX_display](./sim/tb_MUX_display.vhd) - počítá jenom v bitových jednotkách, po periodě od clock_en se póly převrací, tímto určujeme který displej zrovna svítí
+- [MUX_display](./sim/tb_MUX_display.vhd) - tříbitový MUX pro osmibitové sběrnice
 ![mux_display](https://github.com/mara03s/DE1-projekt/assets/164920387/e597b730-3e32-4a25-ae78-f3e41ddf67ec)
 
-- [top_clock](./sim/tb_top_clock.vhd) - kombinace několika clock_en které vyšlou puls široký jednu periodu základního časového signálu po napočítání do zadané hodnoty
+- [top_clock](./sim/tb_top_clock.vhd) - sdílená část programu zajišťující jeho časování
 ![clk_en](https://github.com/mara03s/DE1-projekt/assets/164920387/fa4d7d30-fc3c-418d-8bc4-a36ff71317ce)
 
-- [multiplex_dec](./sim/tb_multiplex_dec.vhd) - text textový
+- [multiplex_dec](./sim/tb_multiplex_dec.vhd) - MUX se vstupem jednoho bitu pro čtyřbitové sběrnice který určuje jestli pokračují dál bity jednotek nebo desítek
 ![multiplex_dec](https://github.com/mara03s/DE1-projekt/assets/164920387/8471a6b1-f3ba-4f65-b534-56aa881ef9d4)
 
 ## Instrukce
