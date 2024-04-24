@@ -35,13 +35,13 @@ Senzor HC-SR04 a naznačení jeho funkce
 
 Zapojení top_level
 
-- [Registr](./sim/tb_registr.vhd) - text textový
+- [Registr](./sim/tb_registr.vhd) - dostane signál, a poté začne ukládat prvky které jsou na jeho vstupu a zároveň vypouští prvky z paměti, a 
 ![registr](https://github.com/mara03s/DE1-projekt/assets/164920387/30bf3e46-36f9-4578-8a19-8fffee55fce3)
 
-- [MUX_display](./sim/tb_MUX_display.vhd) - text textový
+- [MUX_display](./sim/tb_MUX_display.vhd) - počítá jenom v bitových jednotkách, po periodě od clock_en se póly převrací, tímto určujeme který displej zrovna svítí
 ![mux_display](https://github.com/mara03s/DE1-projekt/assets/164920387/e597b730-3e32-4a25-ae78-f3e41ddf67ec)
 
-- [clk_en](./sim/tb_top_clock.vhd) - text textový
+- [top_clock](./sim/tb_top_clock.vhd) - kombinace několika clock_en které vyšlou puls široký jednu periodu základního časového signálu po napočítání do zadané hodnoty
 ![clk_en](https://github.com/mara03s/DE1-projekt/assets/164920387/fa4d7d30-fc3c-418d-8bc4-a36ff71317ce)
 
 - [multiplex_dec](./sim/tb_multiplex_dec.vhd) - text textový
@@ -60,6 +60,7 @@ Sestavení našeho praktického zapojení
 
 
 ## Video
+[![YouTube Video](https://img.youtube.com/vi/8es4DcSuvOQ/0.jpg)](https://www.youtube.com/watch?v=8es4DcSuvOQ&ab_channel=WendySchmidt)
 
 
 
