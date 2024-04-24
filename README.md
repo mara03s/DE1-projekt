@@ -31,6 +31,10 @@ Komponenty desky Nexys A7-50T
 Senzor HC-SR04 a naznačení jeho funkce
 
 ## Popis a simulace komponent
+![top level](https://github.com/mara03s/DE1-projekt/assets/164920387/5ed7055a-711a-4d0e-8269-ecf54b5e931d)
+
+Zapojení top_level
+
 - [Registr](./sim/tb_registr.vhd) - text textový
 ![registr](https://github.com/mara03s/DE1-projekt/assets/164920387/30bf3e46-36f9-4578-8a19-8fffee55fce3)
 
