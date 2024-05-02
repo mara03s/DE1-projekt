@@ -41,7 +41,7 @@ Zapojení top_level
 - [MUX_display](./sim/tb_MUX_display.vhd) - tříbitový MUX pro osmibitové sběrnice
 ![mux_display](https://github.com/mara03s/DE1-projekt/assets/164920387/e597b730-3e32-4a25-ae78-f3e41ddf67ec)
 
-- [counter_dec](./sim/tb_top_clock.vhd) - měří počet pulsů do deseti
+- [counter_dec](./sim/tb_counter_dec.vhd) - měří počet pulsů do deseti
 ![clk_en](https://github.com/mara03s/DE1-projekt/assets/164920387/fa4d7d30-fc3c-418d-8bc4-a36ff71317ce)
 
 - [multiplex_dec](./sim/tb_multiplex_dec.vhd) - MUX se vstupem jednoho bitu pro čtyřbitové sběrnice který určuje jestli pokračují dál bity jednotek nebo desítek
