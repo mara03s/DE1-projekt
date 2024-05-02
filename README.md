@@ -9,7 +9,7 @@ Jako zadání naší práce jsme si vybrali návrh systému pro parkovací syst�
 
 ## Hardware popis
 
-U této práce máme k dispozici desku Nexys A7-50T která je velmi kvalitní komponentou která má velmi širokou škálu využití díky své vysoké kapacitě pamětí a vysokému počtu a možností konektorů. 
+U této práce máme k dispozici desku Nexys A7-50T, která je velmi kvalitní komponentou která má velmi širokou škálu využití díky své vysoké kapacitě pamětí a vysokému počtu a možností konektorů. 
 Dále v naší implementaci využíváme ultrasonických senzorů (HC-SR04) pomocí kterých budeme detekovat hodnoty vzdálenosti, tento senzor nejlépe pracuje v hodnotách do 1 metru, tudíž náš senzor má horní hranici snímání přibližně 90 cm. 
 Také využíváme desky arduino, která zde však ovšem plní pouze napájecí činnost pro senzor. 
 
@@ -41,7 +41,7 @@ Zapojení top_level
 - [MUX_display](./sim/tb_MUX_display.vhd) - tříbitový MUX pro osmibitové sběrnice
 ![mux_display](https://github.com/mara03s/DE1-projekt/assets/164920387/e597b730-3e32-4a25-ae78-f3e41ddf67ec)
 
-- [top_clock](./sim/tb_top_clock.vhd) - sdílená část programu zajišťující jeho časování
+- [counter_dec](./sim/tb_top_clock.vhd) - měří počet pulsů do deseti
 ![clk_en](https://github.com/mara03s/DE1-projekt/assets/164920387/fa4d7d30-fc3c-418d-8bc4-a36ff71317ce)
 
 - [multiplex_dec](./sim/tb_multiplex_dec.vhd) - MUX se vstupem jednoho bitu pro čtyřbitové sběrnice který určuje jestli pokračují dál bity jednotek nebo desítek
