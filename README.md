@@ -33,7 +33,16 @@ Senzor HC-SR04 a naznačení jeho funkce
 ## Popis a simulace komponent
 ![top level](https://github.com/mara03s/DE1-projekt/assets/164920387/5ed7055a-711a-4d0e-8269-ecf54b5e931d)
 
-Zapojení top_level
+- Schéma zapojení komponenty top_level
+
+![image](https://github.com/mara03s/DE1-projekt/assets/114867775/8ff0ca41-abe5-4fbb-8f69-799f4806cd3d)
+
+- Schéma zapojení komponenty top_clock
+
+![image](https://github.com/mara03s/DE1-projekt/assets/114867775/7bfc618a-f259-433c-96e4-d5b0760d5a5b)
+
+- Schéma zapojení komponenty top_registr
+
 
 - [Registr](./sim/tb_registr.vhd) - pole d-latchů, jeho primární funkcí je pustit výstup až po dokončení počítání délky pulsu
 ![registr](https://github.com/mara03s/DE1-projekt/assets/164920387/30bf3e46-36f9-4578-8a19-8fffee55fce3)
